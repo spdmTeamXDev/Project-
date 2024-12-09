@@ -1,3 +1,4 @@
+
 local rs = game:GetService("RunService")
 local ts = game:GetService("TweenService")
 
@@ -60,7 +61,7 @@ local notifications = {
 	theme = "dark",
 	colorSchemes = {
 		dark = {
-			Main = Color3.fromRGB(0, 0, 0),
+			Main = Color3.fromRGB(40, 40, 40),
 			Secondary = Color3.fromRGB(30, 30, 35),
 			Icon = Color3.fromRGB(255, 255, 255),
 			Text = Color3.fromRGB(255, 255, 255),
@@ -245,7 +246,7 @@ function notifications:notify(options)
 	mainFrame.Visible = true
 
 	spawn(function()
-		mainFrame:tween{BackgroundTransparency = 1, Position = UDim2.new(1, -20, 1, -20)}
+		mainFrame:tween{BackgroundTransparency = 0.4, Position = UDim2.new(1, -20, 1, -20)}
 		task.wait(0.1)
 		if callbacksContainer then callbacksContainer:tween{BackgroundTransparency = 0} end
 		task.wait(0.15)
