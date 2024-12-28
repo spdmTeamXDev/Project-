@@ -1,0 +1,341 @@
+if game.CoreGui:FindFirstChild("ToggleUi") == nil then
+local ScreenGui = Instance.new("ScreenGui")
+local ImageButton = Instance.new("ImageButton")
+local UICorner = Instance.new("UICorner")
+-- Configure the ScreenGui
+ScreenGui.Name = "ToggleUi"
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+-- Configure the ImageButton
+ImageButton.Parent = ScreenGui
+ImageButton.BorderColor3 = Color3.fromRGB(255, 186, 117)
+ImageButton.BackgroundColor3 = Color3.fromRGB(108, 52, 255)
+ImageButton.Position = UDim2.new(0.120833337, 0, 0.0952890813, 0)
+ImageButton.Size = UDim2.new(0, 50, 0, 50)
+ImageButton.Image = "rbxassetid://98223507933132"
+ImageButton.Draggable = true
+
+-- Add UICorner for rounded corners
+UICorner.Parent = ImageButton
+
+local function safeskripz()
+
+    if car == true then
+
+        local lib = {
+
+	['notification'] = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/AstroXTeam/Project-/refs/heads/main/Notify"))(),
+
+	['cooldown'] = false,
+
+	['username'] = 'unknown',
+
+	['bw'] = 'unknown'
+
+}
+
+lib.notification:message{
+
+	Title = "AstroXHub ",
+
+	Description = "The car function is still working or enabled if you want to use this function, please disable it  ",
+
+	Icon = 98223507933132
+
+}
+
+        return end
+
+       if duping == true then
+
+        local lib = {
+
+	['notification'] = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/AstroXTeam/Project-/refs/heads/main/Notify"))(),
+
+	['cooldown'] = false,
+
+	['username'] = 'unknown',
+
+	['bw'] = 'unknown'
+
+}
+
+lib.notification:message{
+
+	Title = "AstroXHub ",
+
+	Description = "The repeat function is still working or enabled if you want to use this function, please disable it ",
+
+	Icon = 98223507933132
+
+}
+
+       return end
+
+       if trollinplr == true then 
+
+        local lib = {
+
+	['notification'] = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/AstroXTeam/Project-/refs/heads/main/Notify"))(),
+
+	['cooldown'] = false,
+
+	['username'] = 'unknown',
+
+	['bw'] = 'unknown'
+
+}
+
+lib.notification:message{
+
+	Title = "AstroXHub ",
+
+	Description = "Troll Player function is still working or enabled if you want to use this function, please disable it ",
+
+	Icon = 98223507933132
+
+}
+
+        return end
+
+       if shutdownserver == true then 
+
+        local lib = {
+
+	['notification'] = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/AstroXTeam/Project-/refs/heads/main/Notify"))(),
+
+	['cooldown'] = false,
+
+	['username'] = 'unknown',
+
+	['bw'] = 'unknown'
+
+}
+
+lib.notification:message{
+
+	Title = "AstroXHub ",
+
+	Description = "The shutdown server is still working or enabled if you want to use this function, please disable it ",
+
+	Icon = 98223507933132
+
+}
+
+        return end
+
+       if lagserver == true then 
+
+        local lib = {
+
+	['notification'] = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/AstroXTeam/Project-/refs/heads/main/Notify"))(),
+
+	['cooldown'] = false,
+
+	['username'] = 'unknown',
+
+	['bw'] = 'unknown'
+
+}
+
+lib.notification:message{
+
+	Title = "AstroXHub ",
+
+	Description = "The delay server is still working or enabled if you want to use this function, please disable it ",
+
+	Icon = 98223507933132
+
+}
+
+        return end
+
+       if lagplr == true then 
+
+        local lib = {
+
+	['notification'] = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/AstroXTeam/Project-/refs/heads/main/Notify"))(),
+
+	['cooldown'] = false,
+
+	['username'] = 'unknown',
+
+	['bw'] = 'unknown'
+
+}
+
+lib.notification:message{
+
+	Title = "AstroXHub ",
+
+	Description = "The delay trigger function is still working or enabled if you want to use this function, please disable it ",
+
+	Icon = 98223507933132
+
+}
+
+        return end
+
+       if lagaura == true  then 
+
+        local lib = {
+
+	['notification'] = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/AstroXTeam/Project-/refs/heads/main/Notify"))(),
+
+	['cooldown'] = false,
+
+	['username'] = 'unknown',
+
+	['bw'] = 'unknown'
+
+}
+
+lib.notification:message{
+
+	Title = "AstroXHub ",
+
+	Description = "Lag aura function is still working or enabled if you want to use this function, please disable it ",
+
+	Icon = 98223507933132
+
+}
+
+        return end
+
+       if toolgrip == true then  
+
+       local lib = {
+
+	['notification'] = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/AstroXTeam/Project-/refs/heads/main/Notify"))(),
+
+	['cooldown'] = false,
+
+	['username'] = 'unknown',
+
+	['bw'] = 'unknown'
+
+}
+
+lib.notification:message{
+
+	Title = "AstroXHub ",
+
+	Description = "The tool grip function is still working or enabled, if you want to use this function, please disable it ",
+
+	Icon = 98223507933132
+
+}
+
+        return end
+
+    if looptp == true then
+
+        local lib = {
+
+	['notification'] = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/AstroXTeam/Project-/refs/heads/main/Notify"))(),
+
+	['cooldown'] = false,
+
+	['username'] = 'unknown',
+
+	['bw'] = 'unknown'
+
+}
+
+lib.notification:message{
+
+	Title = "AstroXHub ",
+
+	Description = "Instant transfer to player is still enabled if you want to use this function, please disable it ",
+
+	Icon = 98223507933132
+
+}
+
+     return end
+
+end
+
+local function antifuncheck2()
+
+		if safeantiremove == true then
+
+			local lib = {
+
+	['notification'] = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/AstroXTeam/Project-/refs/heads/main/Notify"))(),
+
+	['cooldown'] = false,
+
+	['username'] = 'unknown',
+
+	['bw'] = 'unknown'
+
+}
+
+lib.notification:message{
+
+	Title = "AstroXHub ",
+
+	Description = "Anti-descent feature is enabled, if you want to use this function, please disable it ",
+
+	Icon = 98223507933132
+
+}
+
+		return end
+
+end
+
+local function antifuncheck2()
+
+		if safeantiremove == true then
+
+			local lib = {
+
+	['notification'] = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/AstroXTeam/Project-/refs/heads/main/Notify"))(),
+
+	['cooldown'] = false,
+
+	['username'] = 'unknown',
+
+	['bw'] = 'unknown'
+
+}
+
+lib.notification:message{
+
+	Title = "AstroXHub ",
+
+	Description = "Anti-descent feature is enabled, if you want to use this function, please disable it",
+
+	Icon = 98223507933132
+
+}
+
+		return end
+
+end
+
+-- Function to handle click event
+ImageButton.MouseButton1Click:Connect(function(value)
+ safeskripz()
+
+		antifuncheck2()
+
+		safeantiremove = true
+
+		oldcf = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(99999999,-490,99999999, 0.974360406, -0.175734088, 0.14049761, -0.133441404, 0.0514053069, 0.989722729, -0.181150302, -0.983094692, 0.026637092)
+
+		game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
+
+		wait(7.5)
+
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = oldcf
+
+		game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
+
+		safeantiremove = false
+end)
+end
