@@ -20,15 +20,10 @@ local Data =
         {
             ["title"] = "Detect Account",
             ["url"] = "https://www.roblox.com/users/"..game.Players.LocalPlayer.UserId,
-            ["description"] = "```"..game.Players.LocalPlayer.DisplayName.." ```",
+            ["description"] = "```"..game.Players.LocalPlayer.Name.." ```",
             ["color"] = tonumber("0xf7c74b"),
             ["thumbnail"] = {["url"] = "https://cdn.discordapp.com/attachments/1277112182743629969/1277337544463224898/Picsart_24-08-26_01-42-34-420.png?ex=66ccccca&is=66cb7b4a&hm=80a0165401d2357f1386cfa88da35a3df2427c1186b0e8b7955272f6c5f6ead9&"},
             ["fields"] = {
-            	{
-                    ["name"] = "UserName:",
-                    ["value"] = "```"..game.Players.LocalPlayer.Name.."```",
-                    ["inline"] = true
-                },
                 {
                     ["name"] = "Execute:",
                     ["value"] = "```"..ExecutorUsing.."```",
