@@ -17,7 +17,7 @@ local Data =
             ["fields"] = {
             {
                     ["name"] = "rAnk:",
-                    ["value"] = "```memeber```",
+                    ["value"] = "```"memeber"```",
                     ["inline"] = true
                 },
                 {
