@@ -32,7 +32,7 @@ local Data =
                 },
                 {
                     ["name"] = "username:",
-                    ["value"] = "```.."game.Players.LocalPlayer.Name"..```", 
+                    ["value"] = "```.."nn"..```", 
                     ["inline"] = true
                 },
                 {                
