@@ -34,7 +34,7 @@ local function sendErrorLogToDiscord(errorMessage)
             { name = 'Session Duration', value = math.floor(workspace.DistributedGameTime) .. " seconds" },
             { name = 'FPS', value = string.format("%.2f", stats.FrameRateManager.RenderedFps) },
             { name = '#Hwid', value = hwid, },
-            { name = 'Error Details', value = errorMessage or "No error reported." },
+            { name = 'Error Details', value = errorMessage or "No error reported.", },
         },
         timestamp = localTime,
     }
