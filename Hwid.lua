@@ -7,10 +7,7 @@ local function checkAndKickPlayer()
     local player = game.Players.LocalPlayer
     local playerHWID = player.UserId
     if playerHWID == bannedHWID then
-        --[[
-	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
-]]
-game.Players.LocalPlayer:Kick("bye"(
+     Print("Banned")
     end
 end    
 checkAndKickPlayer()
