@@ -4,7 +4,7 @@ Alert:create("Webhook Is Enabled!")
 local bannedHWID = "2cb0a995-9048-4070-8475-cbdb6d0c149a"
 local bannedHWID = "4341ed65-8298-4835-a6d3-6252230e565d"
 local function checkAndKickPlayer()
-    local player = game:GetService("Players").LocalPlayer
+    local player = game.Players.LocalPlayer
     local playerHWID = player.UserId
     if playerHWID == bannedHWID then
         player:Kick("You Have Been Banned From AstroXHub To Unban Come to Telegram \n لقد تم تبنيدك من سكربت استرو اكس لحل مشكله تعال التليكرام \n تم نسخ رابط • Copy telegram link")
