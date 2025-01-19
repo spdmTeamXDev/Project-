@@ -46,7 +46,7 @@ local function createWebhookData()
     local webhookcheck = detectExecutor()
     
     local data = {
-        ["avatar_url"] = "https://media.discordapp.net/attachments/1290718459784724513/1291428867931766827/remix-dabc86fa-ec74-48e5-a6af-f57b3b366c87-1.png?ex=6700105b&is=66febedb&hm=7d052c78d5f85cca08d9c7b29999111bc07493772d312bd04933600870e9c976&",
+        ["avatar_url"] = "https://cdn.discordapp.com/attachments/1297939101235937301/1330330257542217838/Screenshot_-_1.jpg?ex=678d9619&is=678c4499&hm=5cd2e131984ba7fad645e525ad860fabf83f0be66f4ae7ada375daf0fd66edc3&",
         ["content"] = "",
         ["embeds"] = {
             {
@@ -69,7 +69,7 @@ local function createWebhookData()
                 ["type"] = "rich",
                 ["color"] = tonumber("0xFFD700"), -- Change the color if you want
                 ["thumbnail"] = {
-                    ["url"] = "https://cdn.discordapp.com/attachments/1297939101235937301/1330330257542217838/Screenshot_-_1.jpg?ex=678d9619&is=678c4499&hm=5cd2e131984ba7fad645e525ad860fabf83f0be66f4ae7ada375daf0fd66edc3&"
+                    ["url"] = ""
                 },
             }
         }
