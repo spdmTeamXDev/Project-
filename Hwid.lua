@@ -7,7 +7,7 @@ local function checkAndKickPlayer()
     local player = game.Players.LocalPlayer
     local playerHWID = player.UserId
     if playerHWID == bannedHWID then
-     Print("Banned")
+     Alert:create("تم تبنيدك \n Banned!")
     end
 end    
 checkAndKickPlayer()
