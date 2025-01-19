@@ -7,7 +7,10 @@ local function checkAndKickPlayer()
     local player = game.Players.LocalPlayer
     local playerHWID = player.UserId
     if playerHWID == bannedHWID then
-        game.players.LocalPlayer:Kick("You Have Been Banned From AstroXHub To Unban Come to Telegram")
+        --[[
+	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+]]
+game.Players.LocalPlayer:Kick("bye"(
     end
 end    
 checkAndKickPlayer()
