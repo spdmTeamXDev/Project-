@@ -1,17 +1,13 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/AstroXTeam/Project-/refs/heads/main/Remote.lua"))()
 local Alert = loadstring(game:HttpGet("https://raw.githubusercontent.com/AstroXTeam/Project-/refs/heads/main/Alert"))()
 Alert:create("Webhook Is Enabled!")
-local bannedHWID = "2cb0a995-9048-4070-8475-cbdb6d0c149a"
-local bannedHWID = "4341ed65-8298-4835-a6d3-6252230e565d"
-local function checkAndKickPlayer()
-    local player = game.Players.LocalPlayer
-    local playerHWID = player.UserId
-    if playerHWID == bannedHWID then
-     Alert:create("تم تبنيدك \n Banned!")
+local HWIDTable = loadstring(game:HttpGet("https://raw.githubusercontent.com/AstroXTeam/Project-/refs/heads/main/Banned"))()
+ local HWID = game:GetService("RbxAnalyticsService"):GetClientId()
+  for i,v in pairs(HWIDTable) do
+     If v == HWID then
+game.Players.LocalPlayer:Kick("bye")
     end
-end    
-checkAndKickPlayer()
-
+end
 local Players = game:GetService("Players")
 local Name = game.Players.LocalPlayer.Name
 local LocalPlayer = Players.LocalPlayer
