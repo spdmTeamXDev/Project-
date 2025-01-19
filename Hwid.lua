@@ -1,6 +1,6 @@
 local Alert = loadstring(game:HttpGet("https://raw.githubusercontent.com/AstroXTeam/Project-/refs/heads/main/Alert"))()
 Alert:create("Webhook Is Enabled!")
-local bannedHWID = ""
+local bannedHWID = "BBA60FA6-18A4-48E2-8100-1672FD847C2E"
 local function checkAndKickPlayer()
     local player = game:GetService("Players").LocalPlayer
     local playerHWID = player.UserId
