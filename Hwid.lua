@@ -57,11 +57,11 @@ local function createWebhookData()
                 ["description"] = string.format(
                     "__[Player Info](https://www.roblox.com/users/%d)__" ..
                     " **\nDisplay Name:** %s \n**Username:** %s \n**User Id:** %d" ..
-                    "\n**AccountAge:** %d\n**Country:** %s**\nHwid:** %s**\nTime:** %s" ..
+                    "**\nTime:** %s" ..
                     "\n\n__[Game Info](https://www.roblox.com/games/%d)__" ..
                     "\n**Game:** %s \n**Game Id**: %d \n**Exploit:** %s" ..
                     "\n\n**JobId:**```%s```",
-                    Userid, DName, Name, Userid, AccountAge, GetHwid,
+                    Userid, DName, Name, Userid, AccountAge,
                     tostring(os.date("%m/%d/%Y")), tostring(os.date("%X")),
                     game.PlaceId, GAMENAME, game.PlaceId, webhookcheck,
                      ConsoleJobId
