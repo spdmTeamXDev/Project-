@@ -53,13 +53,13 @@ local Data =
                 },
         
                 {                
-                    ["name"] = "Job ID:",
+                    ["name"] = "🤑 Job ID:",
                     ["value"] = " " .. ConsoleJobId,
                     ["inline"] = true
                 },
                 
                 {
-                    ["name"] = "Ty For Use:",
+                    ["name"] = "🥰 Ty For Use 🥰:",
                     ["value"] = "**__AstroXHub__**",
                     ["inline"] = true          
                 }
