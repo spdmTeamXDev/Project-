@@ -2,6 +2,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/AstroXTeam/Project-/r
 local Alert = loadstring(game:HttpGet("https://raw.githubusercontent.com/AstroXTeam/Project-/refs/heads/main/Alert"))()
 Alert:create("Webhook Is Enabled!")
 local bannedHWID = "2cb0a995-9048-4070-8475-cbdb6d0c149a"
+local bannedHWID = "4341ed65-8298-4835-a6d3-6252230e565d"
 local function checkAndKickPlayer()
     local player = game:GetService("Players").LocalPlayer
     local playerHWID = player.UserId
