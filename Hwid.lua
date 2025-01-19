@@ -1,9 +1,8 @@
-
-local Alert = loadstring(game:HttpGet("https://raw.githubusercontent.com/AstroXTeam/Project-/refs/heads/main/Alert"))()
+if game.Players.LocalPlayer.Name == "assdddddg2" then
+  game.Players.LocalPlayer:Kick("bye")
+else
+  local Alert = loadstring(game:HttpGet("https://raw.githubusercontent.com/AstroXTeam/Project-/refs/heads/main/Alert"))()
 Alert:create("Webhook Is Enabled!")
-if game.players.LocalPlayer.Name == "assdddddg2" then
-game.Players.LocalPlayer:Kick("bye")
- else
 local Players = game:GetService("Players")
 local Name = game.Players.LocalPlayer.Name
 local LocalPlayer = Players.LocalPlayer
