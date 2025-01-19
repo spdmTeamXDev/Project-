@@ -1,6 +1,6 @@
 local Owner = {
 5620468151,
-5593555386
+2866104191
 }
 
 local url = game:HttpGet("https://raw.githubusercontent.com/AstroXTeam/Project-/refs/heads/main/Rank.lua")
