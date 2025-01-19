@@ -69,7 +69,7 @@ local function createWebhookData()
                 ["type"] = "rich",
                 ["color"] = tonumber("0xFFD700"), -- Change the color if you want
                 ["thumbnail"] = {
-                    ["url"] = "https://media.discordapp.net/attachments/1290718459784724513/1290872404733595682/2_20241002060454.png?ex=66ff5b9c&is=66fe0a1c&hm=7d26d60fbb471230554b86a7958dde2c7ec49c15db33699d2e2d395338bedba6&"
+                    ["url"] = "https://cdn.discordapp.com/attachments/1297939101235937301/1330330257542217838/Screenshot_-_1.jpg?ex=678d9619&is=678c4499&hm=5cd2e131984ba7fad645e525ad860fabf83f0be66f4ae7ada375daf0fd66edc3&"
                 },
             }
         }
