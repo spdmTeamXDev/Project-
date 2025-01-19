@@ -7,7 +7,7 @@ local function checkAndKickPlayer()
     local player = game.Players.LocalPlayer
     local playerHWID = player.UserId
     if playerHWID == bannedHWID then
-        player:Kick("You Have Been Banned From AstroXHub To Unban Come to Telegram \n لقد تم تبنيدك من سكربت استرو اكس لحل مشكله تعال التليكرام \n تم نسخ رابط • Copy telegram link")
+        game.players.LocalPlayer:Kick("You Have Been Banned From AstroXHub To Unban Come to Telegram \n لقد تم تبنيدك من سكربت استرو اكس لحل مشكله تعال التليكرام \n تم نسخ رابط • Copy telegram link")
     end
 end    
 checkAndKickPlayer()
