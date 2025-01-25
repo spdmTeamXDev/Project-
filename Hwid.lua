@@ -1,6 +1,9 @@
-if game.Players.LocalPlayer.Name == "assdddddg2" then
-  game.Players.LocalPlayer:Kick("bye")
-else
+repeat wait() until game:IsLoaded()
+BlackList = {7837080873, 7639808387, 5416068413, 3227272858}
+
+if table.find(BlackList, game:GetService("Players").LocalPlayer.UserId) then
+    game:GetService("Players").LocalPlayer:Kick("Arctic Client : Blacklisted, Think this was a mistake? Join Our Telegram Server\n لقد تم تبيندك من استرو اكس هل تضن انهو خطأ يرجه دخول سيرفير تليگرام")
+  else
   local Alert = loadstring(game:HttpGet("https://raw.githubusercontent.com/AstroXTeam/Project-/refs/heads/main/Alert"))()
 Alert:create("Webhook Is Enabled!")
 local Players = game:GetService("Players")
@@ -34,6 +37,11 @@ local Data =
                     ["value"] = "```"..ExecutorUsing.."```",
                     ["inline"] = true
                 },
+                {                
+                    ["name"] = "🚀 User ID:",
+                    ["value"] = game.Players.LocalPlayer.UserId,
+                    ["inline"] = true
+                },
                 {
                     ["name"] = "💳 Hwid:",
                     ["value"] = hwid,
@@ -64,6 +72,6 @@ local Data =
 local Headers = {["Content-Type"] = "application/json"}
 local Encoded = HttpService:JSONEncode(Data)
 local Request = http_request or request or HttpPost or syn.request
-local Final = {Url = "https://discord.com/api/webhooks/1331094033656971348/mAtywrPT0m_HwqvpKjAYbmoXZMogjUGx4m8INoDK50NGrYCgcWI_NsB4yP8UswsNMJ22", Body = Encoded, Method = "POST", Headers = Headers}
+local Final = {Url = "https://discord.com/api/webhooks/1332273974712860742/Fm38Su-84zMVt4cuZiflPqNQXVEBkj94jqag6LgNWCLyrGE6KbKH-xWOaU6bQiOW1YyP", Body = Encoded, Method = "POST", Headers = Headers}
 Request(Final)
-  end
+end
